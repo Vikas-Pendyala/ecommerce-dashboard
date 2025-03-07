@@ -1,0 +1,31 @@
+.app-container {
+    display: flex;
+    height: 100vh; /* Full screen height */
+}
+
+.sidebar {
+    width: 250px;
+    transition: width 0.3s ease-in-out;
+}
+
+.closed {
+    width: 60px;
+}
+
+.main-content {
+    flex-grow: 1;
+    display: flex; /* Enables flexbox */
+    align-items: center; /* Centers vertically */
+    justify-content: center; /* Centers horizontally */
+    padding: 20px;
+    min-height: 100vh;
+}
+
+.content {
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    padding: 20px;
+    border-radius: 8px;
+    color: rgb(15, 63, 63);
+}
