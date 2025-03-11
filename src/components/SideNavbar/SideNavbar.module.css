@@ -1,76 +1,118 @@
+/* Main Sidebar Container */
 .sidebarContainer {
-  position: relative;
   display: flex;
+  position: relative;
 }
 
-/* Sidebar Styling */
+/* Sidebar */
 .sidebar {
   width: 250px;
   height: 100vh;
   background-color: #ffffff;
   border-right: 2px solid #ddd;
   transition: width 0.3s ease-in-out;
-  overflow: hidden;
   display: flex;
   flex-direction: column;
-  align-items: center;
   position: fixed;
   left: 0;
   top: 0;
+  align-items: center;
 }
 
 .closed {
   width: 60px;
 }
 
-/* Toggle Button (Always at Top Right) */
+/* Toggle Button */
 .toggleButton {
   position: absolute;
   top: 10px;
-  right: 10px; /* Always stick to top-right corner */
+  right: 10px;
   background: none;
   border: none;
   cursor: pointer;
   font-size: 18px;
-  z-index: 1000; /* Ensure it's above other elements */
+  z-index: 1000;
 }
 
-  .header {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    padding: 10px;
-  }
-  
-  .logo {
-    width: 40px;
-    height: 40px;
-  }
-  
-  .menu {
-    width: 100%;
-    margin-top: 20px;
-  }
-  
-  .menuItem {
-    display: flex;
-    justify-content: space-between;
-    padding: 12px;
-    margin: 5px;
-    cursor: pointer;
-    border-radius: 5px;
-    color: white;
-    font-weight: bold;
-  }
-  
-  .menuItem:nth-child(2) {
-    background-color: #f4500d;
-  }
-  
-  .menuItem:nth-child(1),
-  .menuItem:nth-child(3) {
-    background-color: #0b6e87;
-  }
-  
-  
+/* Header */
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 15px 0;
+}
 
+.logo {
+  width: 100px;
+  height: 70px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* Sidebar Menu */
+.menu {
+  width: 100%;
+  /* margin-top: 20px; */
+}
+
+/* Sidebar Items */
+.menuItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px;
+  margin: 5px;
+  cursor: pointer;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+  background-color: #0b6e87;
+  transition: background 0.3s ease-in-out;
+  position: relative;
+}
+
+.menuItem:hover {
+  background-color: #e63946;
+}
+/* Submenu Styling */
+.submenuContainer {
+  position: absolute;
+  left: calc(100% + 1px); /* Aligns submenu to the right of the menu item */
+  top: 0;
+  background: rgb(85, 119, 174); /* Set submenu background color to red */
+  border-radius: 8px;
+  padding: 10px;
+  /* box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); */
+  min-width: 180px;
+  display: block;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.3s ease-in-out;
+}
+
+/* Show submenu when menu item is hovered */
+.menuItem:hover .submenuContainer {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* Submenu List */
+.submenuContainer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.submenuContainer li {
+  padding: 8px 12px;
+  cursor: pointer;
+  border-radius: 10px;
+  color: white; /* Ensure text is visible */
+}
+
+.submenuContainer li:hover {
+  background: #f0f0f0;
+  color: black;
+}
