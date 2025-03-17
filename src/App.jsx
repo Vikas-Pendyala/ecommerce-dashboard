@@ -5,9 +5,8 @@ import Inventory from "./pages/Inventory/Inventory";
 import UserManagement from "./pages/UserManagement/UserManagement";
 
 // Import subpages
-import Overview from "./pages/Dashboard/Overview";
-import Reports from "./pages/Dashboard/Reports";
-import Analytics from "./pages/Dashboard/Analytics";
+import AddCategories from "./pages/Dashboard/AddCategories";
+import AddBrand from "./pages/Dashboard/AddBrand";
 import Settings from "./pages/Dashboard/Settings";
 
 import Stock from "./pages/Inventory/Stock";
@@ -36,9 +35,9 @@ function App() {
             <Route path="/" element={<Dashboard />} />
 
             {/* Dashboard Subpages */}
-            <Route path="/dashboard/overview" element={<Overview />} />
-            <Route path="/dashboard/reports" element={<Reports />} />
-            <Route path="/dashboard/analytics" element={<Analytics />} />
+            <Route path="/dashboard/Add-Categories" element={<AddCategories />} />
+            <Route path="/dashboard/Add-Brand" element={<AddBrand />} />
+            {/* <Route path="/dashboard/Add-Products" element={<AddProducts />} /> */}
             <Route path="/dashboard/settings" element={<Settings />} />
 
             {/* Inventory Subpages */}
