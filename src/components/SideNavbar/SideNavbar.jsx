@@ -17,7 +17,7 @@ const SideNavbar = () => {
   }, [location.pathname]);
   
   const subMenuContent = {
-    dashboard: ["overview", "reports", "analytics", "settings"],
+    dashboard: ["Add-Categories", "Add-Brand", "Add-Product", "settings"],
     inventory: ["stock", "orders", "suppliers", "warehouses"],
     "user-management": ["users", "roles", "permissions", "activity-log"],
   };
