@@ -1,4 +1,4 @@
-body {
+/* body {
     font-family: Arial, sans-serif;
     background-color: #f8f9fa;
     display: flex;
@@ -26,7 +26,6 @@ body {
 
   .form-group1 {
     margin-bottom: 15px;
-    /* background-color: red; */
     display: flex;
     align-items: center;
     justify-content:space-between;
@@ -63,8 +62,9 @@ body {
     width: 48%;
     
   }
-  
-  /* Add Product Button */
+  .status{
+    padding: 10px;
+  }
   .add-product-btn {
     background-color: orange;
     color: white;
@@ -75,7 +75,7 @@ body {
     border-radius: 50%;
   }
   
-  /* Modal Styling */
+  
   .modal-overlay {
     position: fixed;
     top: 0;
@@ -134,7 +134,7 @@ body {
     border-radius: 5px;
   }
   
-  /* Submit Button */
+ 
   .submit-btn {
     width: 100%;
     background-color: navy;
@@ -144,5 +144,77 @@ body {
     font-size: 16px;
     cursor: pointer;
     border-radius: 5px;
+  }
+   */
+
+
+   .form-container {
+    width: 700px;
+    margin: auto;
+    padding: 40px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+    
+  }
+  
+  .form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .form-group input,
+  .form-group textarea {
+    width: 95%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .form-group-row {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    position: relative;
+  }
+  
+  .half-width {
+    flex: 1;
+    /* background-color: red; */
+  }
+  .status{
+    padding-top: 11px !important; 
+    padding-bottom: 11px !important; 
+  }
+  /* Buttons aligned to the right */
+  .button-group {
+    display: flex;
+    gap: 5px;
+    margin-left: auto;
+    
+    
+  }
+  
+  /* Button styles */
+  .add-remove-btn {
+    background-color: #28a745;
+    margin-top: 10px;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 18px;
+    
+  }
+  
+  .remove-btn {
+    background-color: #dc3545;
   }
   
