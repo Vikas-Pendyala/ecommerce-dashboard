@@ -29,11 +29,12 @@ const AddCategories = () => {
         <label>Sub Category</label>
         {subCategories.map((sub) => (
           <div key={sub.id} className="sub-category-container">
-            <select>
+            <input type="text" placeholder="Enter the sub category name" />
+            {/* <select>
               <option>Select</option>
               <option>Sub Category 1</option>
               <option>Sub Category 2</option>
-            </select>
+            </select> */}
             <button type="button" className="add-remove-btn" onClick={addSubCategory}>+</button>
             {subCategories.length > 1 && (
               <button type="button" className="add-remove-btn remove-btn" onClick={() => removeSubCategory(sub.id)}>-</button>

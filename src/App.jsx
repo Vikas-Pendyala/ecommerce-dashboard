@@ -7,6 +7,7 @@ import UserManagement from "./pages/UserManagement/UserManagement";
 // Import subpages
 import AddCategories from "./pages/Dashboard/AddCategories";
 import AddBrand from "./pages/Dashboard/AddBrand";
+import AddProduct from "./pages/Dashboard/AddProduct";
 import Settings from "./pages/Dashboard/Settings";
 
 import Stock from "./pages/Inventory/Stock";
@@ -37,7 +38,7 @@ function App() {
             {/* Dashboard Subpages */}
             <Route path="/dashboard/Add-Categories" element={<AddCategories />} />
             <Route path="/dashboard/Add-Brand" element={<AddBrand />} />
-            {/* <Route path="/dashboard/Add-Products" element={<AddProducts />} /> */}
+            <Route path="/dashboard/Add-Product" element={<AddProduct/>} />
             <Route path="/dashboard/settings" element={<Settings />} />
 
             {/* Inventory Subpages */}
