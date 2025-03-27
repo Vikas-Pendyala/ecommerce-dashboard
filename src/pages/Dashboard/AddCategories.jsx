@@ -73,7 +73,7 @@ const AddCategories = () => {
         {/* Sub Categories Field */}
         <div className="form-group">
           <label>Sub Category</label>
-          {subCategories.map((sub) => (
+          {subCategories.map((sub) => ( 
             <div key={sub.id} className="sub-category-container">
               <input
                 type="text"
