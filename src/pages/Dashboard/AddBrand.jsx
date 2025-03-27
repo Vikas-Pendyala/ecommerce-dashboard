@@ -8,6 +8,7 @@ const AddBrand = () => {
   const [formData, setFormData] = useState({
     brandName: "",
     brandDescription: "",
+
     brandLogo: null, // Changed from "" to null for file inputs
     brandStatus: "",
     productName: "", // Fixed missing field
